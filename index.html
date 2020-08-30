@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="/main.css" />
+    <title>Home Page</title>
+  </head>
+  <body class="app">
+    <!-------Navbar begin----------->
+    <header class="app-header">
+      <a href="/" class="app-header__logo">Lutron</a>
+      <a
+        class="app-sidebar__toggle"
+        href="#"
+        data-toggle="sidebar"
+        aria-label="Hide Sidebar"
+        ><span class="fa fa-bars"></span
+      ></a>
+      <ul class="app-nav">
+        <li class="app-search">
+          <input class="app-search__input" type="search" placeholder="search" />
+          <button class="app-search__button">
+            <i class="fa fa-search"></i>
+          </button>
+        </li>
+        <li class="dropdown">
+          <a class="app-nav__item" href="#">
+            <i style="color: #f7c0ca;" class="fa fa-user fa-lg"></i>
+          </a>
+          <div class="sub-menu-1">
+            <ul>
+              <li>
+                <a class="dropdown-item" href=""
+                  ><i class="fa fa-cog"></i> Settings</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href=""
+                  ><i class="fa fa-user"></i> Profile</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href=""
+                  ><i class="fa fa-sign-out-alt"></i> Logout</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <aside class="app-sidebar">
+      <ul class="app-menu">
+        <li><a class="app-menu__item" href="/index.html">Home</a></li>
+        <li><a class="app-menu__item" href="/contact.html">Contact Us</a></li>
+        <li><a class="app-menu__item" href="/zoom.html">Live Class</a></li>
+        <li><a class="app-menu__item" href="/teacher.html">Tables</a></li>
+      </ul>
+    </aside>
+
+    <section class="app-content">
+      <div class="">
+        <div class="showcase">
+          <div class="card">
+            <img class="thumbnail" src="images/college-student4-1.jpg" />
+            <div class="card-preview">
+              <h1 class="card-title">
+                lutron international school lagos, nigeria
+              </h1>
+              <p class="card-intro">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Expedita eaque odit ipsa doloremque aspernatur id magni
+                asperiores, cupiditate, nulla quis ipsam sequi libero quam
+                provident, sit facere pariatur sed blanditiis!
+                <br />
+
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt at harum quod? Dolorem fugiat molestias pariatur culpa
+                excepturi nam quisquam!
+              </p>
+              <a class="btn" href="zoom.html">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="app-content">
+      <section class="">
+        <div class="container">
+          <h2 style="text-align: center; padding-bottom: 15px;">
+            welcome to our ultra-modern facilities
+          </h2>
+
+          <div class="card-wrapper">
+            <div>
+              <div class="card">
+                <img class="thumbnail" src="images/college-student3-1.jpg" />
+                <div class="card-preview">
+                  <h3 class="card-title">a well equipped Laboratories</h3>
+                  <p class="card-intro">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores, esse! FOI Laboratories
+                  </p>
+                  <a class="btn-sm" href="post.html">Take a Tour</a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="card">
+                <img class="thumbnail" src="images/college-student3-1.jpg" />
+                <div class="card-preview">
+                  <h3 class="card-title">Online Studies - Good Contents</h3>
+                  <p class="card-intro">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Reiciendis iure inventore sed dicta quam a!
+                  </p>
+                  <a class="btn-sm" href="zoom.html">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="card">
+                <img class="thumbnail" src="images/college-student4-1.jpg" />
+                <div class="card-preview">
+                  <h3 class="card-title">Modern Library for Self Learnig</h3>
+                  <p class="card-intro">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Nostrum necessitatibus ipsum beatae. Voluptatem, eveniet
+                    molestias.
+                  </p>
+                  <a class="btn-sm" href="zoom.html">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card">
+                <img class="thumbnail" src="images/graduation-student-1.jpg" />
+                <div class="card-preview">
+                  <h3 class="card-title">Meet Our Alumni</h3>
+                  <p class="card-intro">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Dolorem, praesentium nihil alias obcaecati omnis quae.
+                  </p>
+                  <a class="btn-sm" href="zoom.html">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <div class="container">
+            <h4
+              style="text-align: center; text-transform: uppercase;"
+              class="h4"
+            >
+              testimonials
+            </h4>
+            <i class="fa fa-quote-left"></i>
+            <div class="slider">
+              <div id="slide1" class="myslides">
+                <p class="h6">
+                  My time at lutron College was a great learning experience. It
+                  has been more than 7 years i have graduated with my friends,
+                  who have each done wonders to make the world a beter place,
+                  and i still fell nostalgic about the momments we spent there.
+                  <a href="#">Read more</a>
+                </p>
+                <p class="h5">Ayoka Emmanuel</p>
+                <button><i class="fa fa-user"></i></button>
+              </div>
+              <div id="slide2" class="myslides">
+                <p class="h6">
+                  My time at lutron College was a great learning experience. It
+                  has been more than 7 years i have graduated with my friends,
+                  who have each done wonders to make the world a beter place,
+                  and i still fell nostalgic about the momments we spent there.
+                  <a href="#">Read more</a>
+                </p>
+                <p class="h5">james Diamond</p>
+                <button><i class="fa fa-user"></i></button>
+              </div>
+              <div id="slide3" class="myslides">
+                <p class="h6">
+                  My time at lutron College was a great learning experience. It
+                  has been more than 7 years i have graduated with my friends,
+                  who have each done wonders to make the world a beter place,
+                  and i still fell nostalgic about the momments we spent there.
+                  <a href="#">Read more</a>
+                </p>
+                <p class="h5">Ahmed Sallah</p>
+                <button><i class="fa fa-user"></i></button>
+              </div>
+              <div id="slide4" class="myslides">
+                <p class="h6">
+                  My time at lutron College was a great learning experience. It
+                  has been more than 7 years i have graduated with my friends,
+                  who have each done wonders to make the world a beter place,
+                  and i still fell nostalgic about the momments we spent there.
+                  <a href="#">Read more</a>
+                </p>
+                <p class="h5">Kay Freeman</p>
+
+                <button><i class="fa fa-user"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="app-content">
+        <div id="logo">
+          <p class="h1"><i class="fa fa-atom"></i>Lutron</p>
+        </div>
+        <div class="about">
+          <div class="container">
+            <p class="h4">About Us</p>
+            <hr />
+            <p>
+              Lutron international School is an ingenious school that provides
+              your child with world-class educational experience. We combine the
+              best educational practice with the most current innovative
+              approach to learning to equip your child for an exceptional future
+              in a constantly changing world.
+            </p>
+            <button>
+              <a href=""><i class="fab fa-facebook"></i></a>
+            </button>
+            <button>
+              <a href=""><i class="fab fa-twitter"></i></a>
+            </button>
+            <button>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </button>
+            <button>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+            </button>
+          </div>
+        </div>
+        <div class="features">
+          <div class="container">
+            <div>
+              <p class="h4">Featured Links</p>
+              <hr />
+              <div class="feat-flex">
+                <ul>
+                  <li><i class="fa fa-angle"></i> About Us</li>
+                  <li><i class="fa fa-angle"></i>Admissions</li>
+                  <li><i class="fa fa-angle"></i>Gallery</li>
+                  <li><i class="fa fa-angle"></i>News & Events</li>
+                </ul>
+                <ul>
+                  <li><i class="fa fa-angle"></i> Academics</li>
+                  <li><i class="fa fa-angle"></i>Youtube Channel</li>
+                  <li><i class="fa fa-angle"></i>School Portal</li>
+                  <li><i class="fa fa-angle"></i>Contact</li>
+                </ul>
+              </div>
+              <a class="btn-sm" href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <div class="container">
+            <p class="h4">Information</p>
+            <address>
+              <i class="fa fa-location-arrow"></i>
+              Block 23 Akesan/Iperu Estate an 3 Onward Close. Chevron
+              Alternative Route Lekki, Lagos State. Nigeria
+            </address>
+            <p><i class="fa fa-phone-alt"></i> 08057454700</p>
+            <p><i class="fa fa-envelope"></i> seanamos98@gmail.com</p>
+          </div>
+        </div>
+        <div>
+          <div class="playstore">
+            <button><i class="fab fa-google-play"></i></button>
+
+            <button><i class="fab fa-app-store"></i></button>
+          </div>
+
+          <blockquote>&copy; Copyright 2020 - Lutron Int. School</blockquote>
+        </div>
+      </section>
+    </footer>
+    <!------javascript--=======-->
+    <script src="./index.js"></script>
+  </body>
+</html>

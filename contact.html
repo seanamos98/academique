@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="/main.css" />
+    <title>Contact Page</title>
+  </head>
+  <body class="app">
+    <!-------Navbar begin----------->
+    <header class="app-header">
+      <a href="/" class="app-header__logo">Lutron</a>
+      <a
+        class="app-sidebar__toggle"
+        href="#"
+        data-toggle="sidebar"
+        aria-label="Hide Sidebar"
+        ><span class="fa fa-bars"></span
+      ></a>
+      <ul class="app-nav">
+        <li class="app-search">
+          <input class="app-search__input" type="search" placeholder="search" />
+          <button class="app-search__button">
+            <i class="fa fa-search"></i>
+          </button>
+        </li>
+        <li class="dropdown">
+          <a class="app-nav__item" href="#">
+            <i style="color: #f7c0ca;" class="fa fa-user fa-lg"></i>
+          </a>
+          <div class="sub-menu-1">
+            <ul>
+              <li>
+                <a class="dropdown-item" href=""
+                  ><i class="fa fa-cog"></i> Settings</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href=""
+                  ><i class="fa fa-user"></i> Profile</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href=""
+                  ><i class="fa fa-sign-out-alt"></i> Logout</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <aside class="app-sidebar">
+      <ul class="app-menu">
+        <li><a class="app-menu__item" href="/index.html">Home</a></li>
+        <li><a class="app-menu__item" href="/contact.html">Contact Us</a></li>
+        <li><a class="app-menu__item" href="/zoom.html">Live Class</a></li>
+        <li><a class="app-menu__item" href="/teacher.html">Tables</a></li>
+      </ul>
+    </aside>
+    <!-- -------content here--------- -->
+    <section>
+      <div class="app-content">
+        <div class="map-wrapper">
+          <h1>Locate Us</h1>
+          <div id="map"></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="app-content">
+        <h2>Contact Us</h2>
+      <form >
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name='firstName' placeholder="Your First Name" />
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name='lastName' placeholder="Your Last Name" />
+        <label for="country">Country</label>
+        <select  name="country" id="country">
+          <option style="padding-bottom:5px ;" value="nigeria">Nigeria</option>
+          <option style="padding-bottom:5px ;" value="ghana">Ghana</option>
+          <option style="padding-bottom:5px ;" value="usa">Usa</option>
+          <option style="padding-bottom:5px ;" value="canada">Canada</option>
+          <option style="padding-bottom:5px ;" value="england">England</option>
+          <option value="japan">Japan</option>
+        </select>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" style="height: 200px;" placeholder="your message..."></textarea>
+        <input  type="submit" value="Submit" />
+      </form>
+      </div>
+    </section>
+    <!-- -------content end--------- -->
+    <footer>
+      <section class="app-content">
+        <div id="logo">
+          <p class="h1"><i class="fa fa-atom"></i>Lutron</p>
+        </div>
+        <div class="about">
+          <div class="container">
+            <p class="h4">About Us</p>
+            <hr />
+            <p>
+              Lutron international School is an ingenious school that provides
+              your child with world-class educational experience. We combine the
+              best educational practice with the most current innovative
+              approach to learning to equip your child for an exceptional future
+              in a constantly changing world.
+            </p>
+            <button>
+              <a href=""><i class="fab fa-facebook"></i></a>
+            </button>
+            <button>
+              <a href=""><i class="fab fa-twitter"></i></a>
+            </button>
+            <button>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </button>
+            <button>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+            </button>
+          </div>
+        </div>
+        <div class="features">
+          <div class="container">
+            <div>
+              <p class="h4">Featured Links</p>
+              <hr />
+              <div class="feat-flex">
+                <ul>
+                  <li><i class="fa fa-angle"></i> About Us</li>
+                  <li><i class="fa fa-angle"></i>Admissions</li>
+                  <li><i class="fa fa-angle"></i>Gallery</li>
+                  <li><i class="fa fa-angle"></i>News & Events</li>
+                </ul>
+                <ul>
+                  <li><i class="fa fa-angle"></i> Academics</li>
+                  <li><i class="fa fa-angle"></i>Youtube Channel</li>
+                  <li><i class="fa fa-angle"></i>School Portal</li>
+                  <li><i class="fa fa-angle"></i>Contact</li>
+                </ul>
+              </div>
+              <a class="btn-sm" href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <div class="container">
+            <p class="h4">Information</p>
+            <address>
+              <i class="fa fa-location-arrow"></i>
+              Block 23 Akesan/Iperu Estate an 3 Onward Close. Chevron
+              Alternative Route Lekki, Lagos State. Nigeria
+            </address>
+            <p><i class="fa fa-phone-alt"></i> 08057454700</p>
+            <p><i class="fa fa-envelope"></i> seanamos98@gmail.com</p>
+          </div>
+        </div>
+        <div>
+          <div class="playstore">
+            <button><i class="fab fa-google-play"></i></button>
+
+            <button><i class="fab fa-app-store"></i></button>
+          </div>
+
+          <blockquote>&copy; Copyright 2020 - Lutron Int. School</blockquote>
+        </div>
+      </section>
+    </footer>
+    <!------javascript--=======-->
+    <script src="./index.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOUEljLm7DHgadqSALsqWDudBl12MbOmM&callback=initMap"
+    ></script>
+ </script>
+  </body>
+</html>
