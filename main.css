@@ -302,6 +302,11 @@ ul {
     order: -1;
   }
 }
+@media (min-width: 767px) {
+  .app-sidebar__toggle {
+    display: none;
+  }
+}
 .app-sidebar__toggle > span {
   display: inline-block;
   padding: 15px;
@@ -345,10 +350,6 @@ ul {
 .app-sidebar a {
   color: var(--subTextColor);
 }
-/* .dropdown:hover .sub-menu-1 ul li,
-.app-sidebar a:hover {
-  color: #00000079;
-} */
 
 /* ---------Header End---------- */
 .showcase {
@@ -421,39 +422,14 @@ footer .app-content {
   animation-name: spinning-logo;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-  width: 40px;
-  height: 40px;
+  animation-timing-function: linear;
 }
-@-webkit-keyframes spinning-logo {
-  0% {
-    -webkit-transform: rotate(0deg);
+@keyframes spinning-logo {
+  from {
     transform: rotate(0deg);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
   }
-  25% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 25% 25%;
-  }
-  50% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 50% 50%;
-  }
-  75% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transform-origin: 100% 100%r;
-    transform-origin: 75% 75%;
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
+  to {
     transform: rotate(360deg);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
   }
 }
 .about,
@@ -574,20 +550,56 @@ blockquote {
 #slide4 button i {
   font-size: 2em;
 }
-.playstore {
-  margin-top: 30px;
-  padding-bottom: 20px;
-  text-align: center;
-}
-.playstore button {
-  height: 2em;
-  width: 4em;
-  color: var(--iconButtonColor);
-
+.store {
   background-color: var(--mainColor);
-  margin-right: 20px;
-  margin-top: 10px;
+  color: var(--mainTextColor);
+  width: 90%;
+  margin: 20px auto;
+  height: 200px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid var(--borderColor);
 }
+.store > p {
+  padding: 30px 0;
+}
+
+.apple-store {
+  background-color: var(--mainColor);
+  width: 120px;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: flex;
+  padding-bottom: 5px;
+  border: 1px solid #8d8c8d;
+  background-image: linear-gradient(
+    to right top,
+    #383737,
+    #383737,
+    #616060,
+    #616060,
+    #8d8c8d
+  );
+}
+
+.apple-store > i {
+  font-size: 30px;
+  padding-left: 3px;
+  align-self: center;
+}
+.store-text {
+  font-size: 10px;
+  padding-left: 5px;
+}
+.apple-store > p {
+  line-height: 12px;
+  align-self: center;
+}
+#play-store-icon {
+  color: #00ddff;
+}
+
 /* ---contact-------- */
 .app-content h2 {
   padding-top: 10px;

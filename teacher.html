@@ -1,93 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@300&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+    
+    <link rel="stylesheet" href="/main.css" />
     <title>TEACHER PAGE</title>
    
 </h/ead>
 <body>
     <!-------Navbar begin----------->
-    <h1>Hello World</h1>
+    <header class="app-header">
+        <a href="/" class="app-header__logo">Lutron</a>
+        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"><span
+                class="fa fa-bars"></span></a>
+        <ul class="app-nav">
+            <li class="app-search">
+                <input class="app-search__input" type="search" placeholder="search" />
+                <button class="app-search__button">
+                    <i class="fa fa-search"></i>
+                </button>
+            </li>
+            <li class="dropdown">
+                <a class="app-nav__item" href="#">
+                    <i style="color: #f7c0ca;" class="fa fa-user fa-lg"></i>
+                </a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li>
+                            <a class="dropdown-item" href=""><i class="fa fa-cog"></i> Settings</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href=""><i class="fa fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href=""><i class="fa fa-sign-out-alt"></i> Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <aside class="app-sidebar">
+        <ul class="app-menu">
+            <li><a class="app-menu__item" href="/index.html">Home</a></li>
+            <li><a class="app-menu__item" href="/contact.html">Contact Us</a></li>
+            <li><a class="app-menu__item" href="/zoom.html">Live Class</a></li>
+            <li><a class="app-menu__item" href="/teacher.html">Instructors</a></li>
+        </ul>
+    </aside>
+    <h1 class="app-content" style="margin-top: 50px;">TEACHERS PAGE HERE</h1>
     <!-------Navbar end----------->
-    <div class="container">
+    <!-- ------section------------>
+    <!-- <section style="margin-top: 50px;" class="app-content">
+    <div >
       <h1 class="text-center">Meet Our <span class="head-1">Teachers</span></h1>
-   </div>
-    <!--------section------------>
-    <div class="container">
-    <div class="row">
-     <div class="col-md-4">
-     <img src="" alt="teacher pix">
-     <div>
+   </div >
+    <div style="padding: 20px 0;">
+     <img class="thumbnail" src="/images/college-student2-1.jpg" alt="teacher pix">
+     <div style="padding-top: 10px;">
          <h3>Professor Charles Xevwhat</h3>
          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, cumque! Repudiandae vel recusandae officia nemo? Atque expedita totam deleniti corporis quam. Aspernatur doloribus enim rem sapiente molestias optio qui quasi.</p>
      </div>
-     </div>
-     <div class="col-md-4">
-     <img src="" alt="teacher pix">
-     <div>
+    </div >
+    <div style="padding: 20px 0;">
+     <img class="thumbnail" src="/images/college-student3-1.jpg" alt="teacher pix">
+     <div style="padding-top: 10px;">
          <h3>Professor Charles Xevwhat</h3>
          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, cumque! Repudiandae vel recusandae officia nemo? Atque expedita totam deleniti corporis quam. Aspernatur doloribus enim rem sapiente molestias optio qui quasi.</p>
      </div>
-     </div>
-     <div class="col-md-4">
-     <img src="" alt="teacher pix">
-     <div>
-         <h3>Professor Charles Xevwhat</h3>
-         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, cumque! Repudiandae vel recusandae officia nemo? Atque expedita totam deleniti corporis quam. Aspernatur doloribus enim rem sapiente molestias optio qui quasi.</p>
-     </div>
-     </div>
-      <div>
     </div>
-    <!------end of section--------->
+     <div style="padding: 20px 0;">
+     <img class="thumbnail" src="/images/college-student4-1.jpg" alt="teacher pix">
+     <div style="padding-top: 10px ;">
+         <h3>Professor Charles Xevwhat</h3>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, cumque! Repudiandae vel recusandae officia nemo? Atque expedita totam deleniti corporis quam. Aspernatur doloribus enim rem sapiente molestias optio qui quasi.</p>
+     </div>
+    </div>
+    </section> -->
+     
+    <!------end of section------- -->
     <!----- footer------->
     <footer>
-        <div class="container">
-            <div class="row">
-             <div class="col-md-4">
-                 <div class="d-flex">
-                 <div class="list-group">
-                 <h4 class="">Company</h4>
-               <ul>
-                   <li class="list-group-item"><a href="#">About Us</a></li>
-                   <li class="list-group-item"><a href="#">Contact US</a></li>
-                   <li class="list-group-item"><a href="#">Blog</a></li>
-                   <li class="list-group-item"><a href="#">Pricing</a></li>
-                   <li class="list-group-item"><a href="#">Services</a></li>
-               </ul>
-               </div>
-               <div class="list-group">
-                <h4 class="">Info</h4>
-              <ul>
-                  <li class="list-group-item"><a href="#">TeacherS</a></li>
-                  <li class="list-group-item"><a href="#">Development</a></li>
-                  <li class="list-group-item"><a href="#">API</a></li>
-                  <li class="list-group-item"><a href="#">FAQ</a></li>
-              </ul>
+        <section class="app-content">
+            <div id="logo">
+                <p class="h1"><i class="fa fa-atom"></i>Lutron</p>
             </div>
-             </div>
-             </div>
-             <div class="col-md-4">
-                <h4>Join Our mailing list</h4>
-                <input type="email" name="email">
-                <blockquote> Copyright &copy; 2020 All rights reserverd</blockquote>
-
+            <div class="about">
+                <div class="container">
+                    <p class="h4">About Us</p>
+                    <hr />
+                    <p>
+                        Lutron international School is an ingenious school that provides
+                        your child with world-class educational experience. We combine the
+                        best educational practice with the most current innovative
+                        approach to learning to equip your child for an exceptional future
+                        in a constantly changing world.
+                    </p>
+                    <button>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                    </button>
+                    <button>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </button>
+                    <button>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </button>
+                    <button>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </button>
+                </div>
             </div>
-             
-             <div class="col-md-4"> 
-              <h4>Find Us on Social media</h4>
-              <a href="http://facebook.com"><i></i></a>
-              <a href="http://twitter.com"><i></i></a>
-              <a href="http://instagram.com"><i></i></a>
-              <a href="http://youtube.com"><i></i></a>
-             </div>
-            
+            <div class="features">
+                <div class="container">
+                    <div>
+                        <p class="h4">Featured Links</p>
+                        <hr />
+                        <div class="feat-flex">
+                            <ul>
+                                <li><i class="fa fa-angle"></i> About Us</li>
+                                <li><i class="fa fa-angle"></i>Admissions</li>
+                                <li><i class="fa fa-angle"></i>Gallery</li>
+                                <li><i class="fa fa-angle"></i>News & Events</li>
+                            </ul>
+                            <ul>
+                                <li><i class="fa fa-angle"></i> Academics</li>
+                                <li><i class="fa fa-angle"></i>Youtube Channel</li>
+                                <li><i class="fa fa-angle"></i>School Portal</li>
+                                <li><i class="fa fa-angle"></i>Contact</li>
+                            </ul>
+                        </div>
+                        <a class="btn-sm" href="#">Learn More</a>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="info">
+                <div class="container">
+                    <p class="h4">Information</p>
+                    <address>
+                        <i class="fa fa-location-arrow"></i>
+                        Block 23 Akesan/Iperu Estate an 3 Onward Close. Chevron
+                        Alternative Route Lekki, Lagos State. Nigeria
+                    </address>
+                    <p><i class="fa fa-phone-alt"></i> 08057454700</p>
+                    <p><i class="fa fa-envelope"></i> seanamos98@gmail.com</p>
+                </div>
+            </div>
+            <div>
+                <div class="playstore">
+                    <button><i class="fab fa-google-play"></i></button>
+    
+                    <button><i class="fab fa-app-store"></i></button>
+                </div>
+    
+                <blockquote>&copy; Copyright 2020 - Lutron Int. School</blockquote>
+            </div>
+        </section>
     </footer>
-    <!----- end of footer------->
-     <!------javascript--=======-->
-    <script src="./vendor/jquery/dist/gjquery.min.js"></script>
-    <script src="./vendor/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <!------javascript--=======-->
+    <script src="./index.js"></script>
 </body>
 </html>
