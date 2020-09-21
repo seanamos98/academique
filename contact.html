@@ -9,15 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
-    
-     
-    
-    <link
-      rel="stylesheet"
-      href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css"
-    />
 
-    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="main.css" />
     <title>Contact Page</title>
   </head>
   <body class="app">
@@ -40,7 +33,7 @@
         </li>
         <li class="dropdown">
           <a class="app-nav__item" href="#">
-            <i style="color: #f7c0ca;" class="fa fa-user fa-lg"></i>
+            <i style="color: #f7c0ca" class="fa fa-user fa-lg"></i>
           </a>
           <div class="sub-menu-1">
             <ul>
@@ -66,10 +59,10 @@
     </header>
     <aside class="app-sidebar">
       <ul class="app-menu">
-        <li><a class="app-menu__item" href="/index.html">Home</a></li>
-        <li><a class="app-menu__item" href="/contact.html">Contact Us</a></li>
-        <li><a class="app-menu__item" href="/zoom.html">Live Class</a></li>
-        <li><a class="app-menu__item" href="/teacher.html">Instructors</a></li>
+        <li><a class="app-menu__item" href="index.html">Home</a></li>
+        <li><a class="app-menu__item" href="contact.html">Contact Us</a></li>
+        <li><a class="app-menu__item" href="zoom.html">Live Class</a></li>
+        <li><a class="app-menu__item" href="teacher.html">Instructors</a></li>
       </ul>
     </aside>
     <!-- -------content here--------- -->
@@ -84,24 +77,39 @@
     <section>
       <div class="app-content">
         <h2>Contact Us</h2>
-      <form >
-        <label for="firstName">First Name</label>
-        <input type="text" id="firstName" name='firstName' placeholder="Your First Name" />
-        <label for="lastName">Last Name</label>
-        <input type="text" id="lastName" name='lastName' placeholder="Your Last Name" />
-        <label for="country">Country</label>
-        <select  name="country" id="country">
-          <option style="padding-bottom:5px ;" value="nigeria">Nigeria</option>
-          <option style="padding-bottom:5px ;" value="ghana">Ghana</option>
-          <option style="padding-bottom:5px ;" value="usa">Usa</option>
-          <option style="padding-bottom:5px ;" value="canada">Canada</option>
-          <option style="padding-bottom:5px ;" value="england">England</option>
-          <option value="japan">Japan</option>
-        </select>
-        <label for="message">Message</label>
-        <textarea name="message" id="message" style="height: 200px;" placeholder="your message..."></textarea>
-        <input  type="submit" value="Submit" />
-      </form>
+        <form>
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="Your First Name"
+          />
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Your Last Name"
+          />
+          <label for="country">Country</label>
+          <select name="country" id="country">
+            <option style="padding-bottom: 5px" value="nigeria">Nigeria</option>
+            <option style="padding-bottom: 5px" value="ghana">Ghana</option>
+            <option style="padding-bottom: 5px" value="usa">Usa</option>
+            <option style="padding-bottom: 5px" value="canada">Canada</option>
+            <option style="padding-bottom: 5px" value="england">England</option>
+            <option value="japan">Japan</option>
+          </select>
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            style="height: 200px"
+            placeholder="your message..."
+          ></textarea>
+          <input type="submit" value="Submit" />
+        </form>
       </div>
     </section>
     <!-- -------content end--------- -->
@@ -185,19 +193,17 @@
           </div>
         </div>
         <div>
-          
-
           <blockquote>&copy; Copyright 2020 - Lutron Int. School</blockquote>
         </div>
       </section>
     </footer>
     <!------javascript--=======-->
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
     <script
       async
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOUEljLm7DHgadqSALsqWDudBl12MbOmM&callback=initMap"
     ></script>
- </script>
+    <script src="https://use.fontawesome.com/61f05c7346.js"></script>
   </body>
 </html>
